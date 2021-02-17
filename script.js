@@ -40,9 +40,17 @@ function update (event){
 }
 
 function initGame(){
+
     criarBG();
     snakeWalking();
     foodCreat();
+
+    for(i = 1; i < snakeW.length; i++){
+        if(snakeW[0].x == snakeW[i].x && snakeW[0].y == snakeW[i].y){
+            clearInterval(initGame);
+            alert('Game Over');
+        }
+    }
 
     /*some de um lado reaparece do outro*/
     if(snakeW[0].x > 15 * box && direction == "right") snakeW[0].x = 0;
