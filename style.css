@@ -1,9 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
 body{
+    font: 400 1.8rem/1 'Fjalla One', sans-serif;
     height: 95vh;
-    width: 95vh;
+    width: 95;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: green;
+    background-color:wheat;
+    
 }
+
+h1{
+    margin: 2rem;
+    color: #fff;
+    text-shadow: #2e2e2e 0.1em 0.1em 0.2em;/*sobrea o box*/
+
+
+}
+
+#snake{
+    border-radius: 4%;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75); /*sobrea o box*/    
+    
+}
+
